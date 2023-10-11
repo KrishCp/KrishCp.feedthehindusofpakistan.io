@@ -4,7 +4,7 @@ import axios from 'axios';
 const HomeScreen = {
   render: async () => {
     const response = await axios({
-      url: 'http://localhost:5000/api/donations',
+      url: '/api/donations',
       headers: {
         'content-type': 'application/json',
       },
