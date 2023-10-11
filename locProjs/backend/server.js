@@ -10,6 +10,9 @@ import config from './config';
 // import { config } from 'dotenv';
 
 const app = express();
+
+app.use (express.static("front"));
+
 app.use(cors());
 // app.use('/api/users', userRouter);
 app.get('/api/paypal/clientId',(req ,res) => {
